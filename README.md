@@ -1,2 +1,2 @@
 # ZKExtension
-Frequently used extensions for obj-C class.
+Frequently used extensions for Objective-C class.
