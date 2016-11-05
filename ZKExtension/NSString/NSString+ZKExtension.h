@@ -10,7 +10,7 @@
 
 @interface NSString (ZKExtension)
 
-// Cast to date
+// Convert to date
 - (NSDate *)zk_dateFromFormatter:(NSString *)formatter;
 
 // Remove whitespace

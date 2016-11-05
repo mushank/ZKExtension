@@ -1,5 +1,5 @@
 //
-//  NSDictionary+ZKExtension.h
+//  NSArray+ZKExtension.h
 //  ZKExtension
 //
 //  Created by Jack on 11/1/16.
@@ -8,9 +8,13 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSDictionary (ZKExtension)
+@interface NSArray (ZKExtension)
 
-// Cast to JSON string
+// Return safe object, replace `null` with `nil`
+- (id)zk_objectAtIndex:(NSUInteger)index;
+
+
+// Convert to JSON string
 - (NSString *)zk_toJSONString;
 
 @end

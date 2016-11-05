@@ -10,7 +10,7 @@
 
 @interface NSDate (ZKExtension)
 
-// Cast to string
+// Convert to string
 - (NSString *)zk_stringInFormatter:(NSString *)formatter;
 
 - (NSString *)zk_humanReadableTimeString;

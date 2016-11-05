@@ -17,13 +17,11 @@
 }
 
 - (NSString *)zk_removeWhiteSpaceCharacter {
-    NSString *string = [self stringByReplacingOccurrencesOfString:@" " withString:@""];
-    return string;
+    return [self stringByReplacingOccurrencesOfString:@" " withString:@""];
 }
 
 - (NSString *)zk_encodeURLString {
-    NSString *string = (NSString *)CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)self, NULL, CFSTR(":/?#[]@!$ &'()*+,;=\"<>%{}|\\^~`"), CFStringConvertNSStringEncodingToEncoding(NSUTF8StringEncoding)));
-    return string;
+    return [self stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
 }
 
 - (BOOL)zk_isBeginWithString:(NSString *)begin {

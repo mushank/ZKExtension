@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "ZKExtension.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    // For example
+    NSString *str = @"Test";
+    NSLog(@"Str is %@ Null", str.zk_isNull ? @"" : @"Not");
+    
+    NSArray *arr = @[@(1), @(2), @(3)];
+    NSLog(@"Convert to JSON string: %@", arr.zk_toJSONString);
 }
 
 

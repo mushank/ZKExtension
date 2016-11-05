@@ -10,7 +10,7 @@
 
 @interface NSDictionary (ZKExtension)
 
-// Cast to JSON string
+// Convert to JSON string
 - (NSString *)zk_toJSONString;
 
 @end
