@@ -24,6 +24,14 @@
     return [self stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
 }
 
+- (NSString *)zk_toChinesePhoneticSymbol
+{
+    NSMutableString *string = [self mutableCopy];
+    CFStringTransform((__bridge CFMutableStringRef)string, NULL, kCFStringTransformMandarinLatin, NO);
+    CFStringTransform((__bridge CFMutableStringRef)string, NULL, kCFStringTransformStripCombiningMarks, NO);
+    return string;
+}
+
 - (BOOL)zk_isBeginWithString:(NSString *)begin {
     BOOL result = NO;
     NSRange found = [self rangeOfString:begin options:NSCaseInsensitiveSearch];
@@ -41,6 +49,7 @@
     }
     return result;
 }
+
 
 
 @end

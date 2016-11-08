@@ -19,6 +19,9 @@
 // Return encoded URL string
 - (NSString*)zk_encodeURLString;
 
+// Return phonetic symbol (PinYin) from Chinese characters
+- (NSString *)zk_toChinesePhoneticSymbol;
+
 - (BOOL)zk_isBeginWithString:(NSString *)begin;
 - (BOOL)zk_isEndWithString:(NSString *)end;
 

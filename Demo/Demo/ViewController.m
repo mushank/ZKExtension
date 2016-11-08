@@ -25,6 +25,10 @@
     
     NSArray *arr = @[@(1), @(2), @(3)];
     NSLog(@"Convert to JSON string: %@", arr.zk_toJSONString);
+    
+    NSString *Chinese = @"中国汉字";
+    NSString *pinyin = [Chinese zk_toChinesePhoneticSymbol];
+    NSLog(@"`%@` 的拼音是: `%@`", Chinese, pinyin);
 }
 
 
