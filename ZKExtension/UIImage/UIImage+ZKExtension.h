@@ -13,4 +13,6 @@
 + (UIImage *)zk_imageWithColor:(UIColor *)color;
 + (UIImage *)zk_imageWithColor:(UIColor *)color size:(CGSize)size;
 
++ (UIImage *)zk_imageWithLayer:(CALayer *)layer;
+
 @end

@@ -26,4 +26,13 @@
     return image;
 }
 
++ (UIImage *)zk_imageWithLayer:(CALayer *)layer
+{
+    UIGraphicsBeginImageContext(layer.frame.size);
+    [layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
 @end
