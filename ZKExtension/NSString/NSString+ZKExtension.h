@@ -25,4 +25,7 @@
 - (BOOL)zk_isBeginWithString:(NSString *)begin;
 - (BOOL)zk_isEndWithString:(NSString *)end;
 
+- (BOOL)zk_isPureIntString;
+- (BOOL)zk_isPureFloatString;
+
 @end

@@ -50,6 +50,16 @@
     return result;
 }
 
+- (BOOL)zk_isPureIntString{
+    NSScanner *scan = [NSScanner scannerWithString:self];
+    int value;
+    return [scan scanInt:&value] && [scan isAtEnd];
+}
 
+- (BOOL)zk_isPureFloatString{
+    NSScanner *scan = [NSScanner scannerWithString:self];
+    float value;
+    return [scan scanFloat:&value] && [scan isAtEnd];
+}
 
 @end

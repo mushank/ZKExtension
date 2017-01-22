@@ -29,6 +29,10 @@
     NSString *Chinese = @"中国汉字";
     NSString *pinyin = [Chinese zk_toChinesePhoneticSymbol];
     NSLog(@"`%@` 的拼音是: `%@`", Chinese, pinyin);
+    
+    NSString *floatStr = @"123.456";
+    BOOL isIntStr = [floatStr zk_isPureIntString];
+    NSLog(@"`%@` is %@ Int String", floatStr, isIntStr ? @"" : @"Not");
 }
 
 
