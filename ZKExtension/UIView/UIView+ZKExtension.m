@@ -33,11 +33,11 @@ static char kZKActionHandlerLongPressGestureKey;
 }
 
 #pragma mark - Methods for cell
-- (UINib *)zk_nib {
++ (UINib *)zk_nib {
     return [UINib nibWithNibName:NSStringFromClass(self.class) bundle:[NSBundle mainBundle]];
 }
 
-- (NSString *)zk_cellReuseIdentifier {
++ (NSString *)zk_cellReuseIdentifier {
     return NSStringFromClass(self.class);
 }
 

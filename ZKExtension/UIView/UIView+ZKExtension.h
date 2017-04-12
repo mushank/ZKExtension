@@ -16,8 +16,8 @@
 - (UIImage *)zk_screenshot;
 
 #pragma mark - Methods for cell
-- (UINib *)zk_nib;
-- (NSString *)zk_cellReuseIdentifier;
++ (UINib *)zk_nib;
++ (NSString *)zk_cellReuseIdentifier;
 
 #pragma mark - Gesture with block callback
 - (void)zk_setTapActionWithBlock:(void (^)(void))block;
