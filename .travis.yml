@@ -1,4 +1,7 @@
 language: objective-c
+
+osx_image: xcode8.2
+
 xcode_project: Demo/Demo.xcodeproj
 xcode_scheme: Demo
 
