@@ -15,10 +15,10 @@
     NSOperationQueue *mainQueue = [NSOperationQueue mainQueue];
     __weak UIViewController *weakSelf = self;
     
-    [[NSNotificationCenter defaultCenter]addObserverForName:UIKeyboardWillShowNotification object:nil queue:mainQueue usingBlock:^(NSNotification *noti){
+    [[NSNotificationCenter defaultCenter] addObserverForName:UIKeyboardWillShowNotification object:nil queue:mainQueue usingBlock:^(NSNotification *noti){
         [weakSelf.view addGestureRecognizer:tapGesture];
     }];
-    [[NSNotificationCenter defaultCenter]addObserverForName:UIKeyboardWillHideNotification object:nil queue:mainQueue usingBlock:^(NSNotification *noti){
+    [[NSNotificationCenter defaultCenter] addObserverForName:UIKeyboardWillHideNotification object:nil queue:mainQueue usingBlock:^(NSNotification *noti){
         [weakSelf.view removeGestureRecognizer:tapGesture];
     }];
 }
