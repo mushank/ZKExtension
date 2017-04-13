@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		043C3A151E9F242700531954 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043C3A111E9F242700531954 /* LaunchScreen.storyboard */; };
+		043C3A161E9F242700531954 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043C3A131E9F242700531954 /* Main.storyboard */; };
 		046B77D21DCDCD4200BBA571 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B77D11DCDCD4200BBA571 /* main.m */; };
 		046B77D51DCDCD4200BBA571 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B77D41DCDCD4200BBA571 /* AppDelegate.m */; };
 		046B77D81DCDCD4200BBA571 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B77D71DCDCD4200BBA571 /* ViewController.m */; };
-		046B77DB1DCDCD4200BBA571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046B77D91DCDCD4200BBA571 /* Main.storyboard */; };
 		046B77DD1DCDCD4200BBA571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 046B77DC1DCDCD4200BBA571 /* Assets.xcassets */; };
-		046B77E01DCDCD4200BBA571 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 046B77DE1DCDCD4200BBA571 /* LaunchScreen.storyboard */; };
 		046B78C61DCDE03200BBA571 /* NSArray+ZKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B78A91DCDE03200BBA571 /* NSArray+ZKExtension.m */; };
 		046B78C71DCDE03200BBA571 /* NSDate+ZKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B78AC1DCDE03200BBA571 /* NSDate+ZKExtension.m */; };
 		046B78C81DCDE03200BBA571 /* NSDictionary+ZKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 046B78AF1DCDE03200BBA571 /* NSDictionary+ZKExtension.m */; };
@@ -26,15 +26,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		043C3A121E9F242700531954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		043C3A141E9F242700531954 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		046B77CD1DCDCD4200BBA571 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		046B77D11DCDCD4200BBA571 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		046B77D31DCDCD4200BBA571 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		046B77D41DCDCD4200BBA571 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		046B77D61DCDCD4200BBA571 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		046B77D71DCDCD4200BBA571 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		046B77DA1DCDCD4200BBA571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		046B77DC1DCDCD4200BBA571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		046B77DF1DCDCD4200BBA571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		046B77E11DCDCD4200BBA571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		046B78A81DCDE03200BBA571 /* NSArray+ZKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+ZKExtension.h"; sourceTree = "<group>"; };
 		046B78A91DCDE03200BBA571 /* NSArray+ZKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ZKExtension.m"; sourceTree = "<group>"; };
@@ -103,8 +103,8 @@
 		046B77D01DCDCD4200BBA571 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				046B77DE1DCDCD4200BBA571 /* LaunchScreen.storyboard */,
-				046B77D91DCDCD4200BBA571 /* Main.storyboard */,
+				043C3A111E9F242700531954 /* LaunchScreen.storyboard */,
+				043C3A131E9F242700531954 /* Main.storyboard */,
 				046B77E11DCDCD4200BBA571 /* Info.plist */,
 				046B77D11DCDCD4200BBA571 /* main.m */,
 			);
@@ -117,9 +117,9 @@
 				046B78C51DCDE03200BBA571 /* ZKExtension.h */,
 				046B78B01DCDE03200BBA571 /* NSObject */,
 				046B78B31DCDE03200BBA571 /* NSString */,
-				046B78AA1DCDE03200BBA571 /* NSDate */,
 				046B78A71DCDE03200BBA571 /* NSArray */,
 				046B78AD1DCDE03200BBA571 /* NSDictionary */,
+				046B78AA1DCDE03200BBA571 /* NSDate */,
 				046B78B61DCDE03200BBA571 /* UIColor */,
 				046B78B91DCDE03200BBA571 /* UIImage */,
 				046B78BF1DCDE03200BBA571 /* UIView */,
@@ -251,6 +251,7 @@
 				TargetAttributes = {
 					046B77CC1DCDCD4200BBA571 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = FE8QNZJ7C9;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -278,9 +279,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				046B77E01DCDCD4200BBA571 /* LaunchScreen.storyboard in Resources */,
+				043C3A161E9F242700531954 /* Main.storyboard in Resources */,
 				046B77DD1DCDCD4200BBA571 /* Assets.xcassets in Resources */,
-				046B77DB1DCDCD4200BBA571 /* Main.storyboard in Resources */,
+				043C3A151E9F242700531954 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,20 +311,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		046B77D91DCDCD4200BBA571 /* Main.storyboard */ = {
+		043C3A111E9F242700531954 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				046B77DA1DCDCD4200BBA571 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		046B77DE1DCDCD4200BBA571 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				046B77DF1DCDCD4200BBA571 /* Base */,
+				043C3A121E9F242700531954 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		043C3A131E9F242700531954 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				043C3A141E9F242700531954 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -423,6 +424,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FE8QNZJ7C9;
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mushank.Demo;
@@ -434,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = FE8QNZJ7C9;
 				INFOPLIST_FILE = Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mushank.Demo;

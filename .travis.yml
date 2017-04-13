@@ -1,9 +1,6 @@
 language: objective-c
-
-osx_image: xcode8.2
-
 xcode_project: Demo/Demo.xcodeproj
 xcode_scheme: Demo
 
 script:
-- xctool -project Demo/Demo.xcodeproj -scheme Demo build test -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
+- xcodebuild -project Demo/Demo.xcodeproj -scheme Demo -sdk iphonesimulator
