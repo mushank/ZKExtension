@@ -15,4 +15,5 @@
 
 + (UIImage *)zk_imageWithLayer:(CALayer *)layer;
 
+- (UIImage *)zk_resizeToSize:(CGSize)size;
 @end
