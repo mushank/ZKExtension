@@ -10,14 +10,15 @@
 
 @interface UIView (ZKExtension)
 
-- (void)zk_removeAllSubviews;
 
-// Return self screenshot
+#pragma mark - Self screenshot
 - (UIImage *)zk_screenshot;
 
-#pragma mark - Methods for cell
+#pragma mark - Method convenience
 + (UINib *)zk_nib;
-+ (NSString *)zk_cellReuseIdentifier;
++ (NSString *)zk_reuseIdentifier;
+
+- (void)zk_removeAllSubviews;
 
 #pragma mark - Gesture with block callback
 - (void)zk_setTapActionWithBlock:(void (^)(void))block;

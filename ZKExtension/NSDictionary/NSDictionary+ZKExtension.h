@@ -10,7 +10,11 @@
 
 @interface NSDictionary (ZKExtension)
 
-// Convert to JSON string
+// Return safe object, replace `null` with `nil`
+- (id)zk_objectForKey:(NSString *)key;
+
+#pragma mark - Convert to JSON
 - (NSString *)zk_toJSONString;
+- (NSData *)zk_toJSONData;
 
 @end

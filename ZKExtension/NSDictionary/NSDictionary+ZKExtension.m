@@ -10,14 +10,23 @@
 
 @implementation NSDictionary (ZKExtension)
 
-- (NSString *)zk_toJSONString {
-    return [[NSString alloc] initWithData:[self toJSONData:self] encoding:NSUTF8StringEncoding];
+#pragma mark - Return safe object, replace `null` with `nil`
+- (id)zk_objectForKey:(NSString *)key{
+    id object = [self objectForKey:key];
+    if ([object isEqual:[NSNull null]]) {
+        object = nil;
+    }
+    return object;
 }
 
-#pragma mark - Private
-- (NSData *)toJSONData:(id)obj {
+#pragma mark - Convert to JSON
+- (NSString *)zk_toJSONString {
+    return [[NSString alloc] initWithData:[self zk_toJSONData] encoding:NSUTF8StringEncoding];
+}
+
+- (NSData *)zk_toJSONData{
     NSError *error = nil;
-    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:obj options:NSJSONWritingPrettyPrinted error:&error];
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:self options:NSJSONWritingPrettyPrinted error:&error];
     if (jsonData.length > 0 && error == nil) {
         return jsonData;
     }else{

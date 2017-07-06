@@ -10,9 +10,8 @@
 
 @interface NSDate (ZKExtension)
 
-// Convert to string
+#pragma mark - Convert to string
 - (NSString *)zk_stringInFormatter:(NSString *)formatter;
-
 - (NSString *)zk_humanReadableTimeString;
 
 #pragma mark - Extension for calendar

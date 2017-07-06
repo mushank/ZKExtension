@@ -10,6 +10,7 @@
 
 @implementation NSDate (ZKExtension)
 
+#pragma mark - Convert to string
 - (NSString *)zk_stringInFormatter:(NSString *)formatter {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:formatter];
@@ -37,7 +38,6 @@
     }
     return str;
 }
-
 
 #pragma mark - Extension for calendar
 - (NSInteger)zk_year {

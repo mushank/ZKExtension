@@ -16,13 +16,7 @@ static char kZKActionHandlerLongPressGestureKey;
 
 @implementation UIView (ZKExtension)
 
-- (void)zk_removeAllSubviews {
-    while (self.subviews.count) {
-        UIView *subView = self.subviews.lastObject;
-        [subView removeFromSuperview];
-    }
-}
-
+#pragma mark - Self screenshot
 - (UIImage *)zk_screenshot {
     CGFloat scale = [UIScreen mainScreen].scale;
     UIGraphicsBeginImageContextWithOptions(self.frame.size, NO, scale);
@@ -32,15 +26,21 @@ static char kZKActionHandlerLongPressGestureKey;
     return screenshot;
 }
 
-#pragma mark - Methods for cell
+#pragma mark - Methods convenience
 + (UINib *)zk_nib {
     return [UINib nibWithNibName:NSStringFromClass(self.class) bundle:[NSBundle mainBundle]];
 }
 
-+ (NSString *)zk_cellReuseIdentifier {
++ (NSString *)zk_reuseIdentifier {
     return NSStringFromClass(self.class);
 }
 
+- (void)zk_removeAllSubviews {
+    while (self.subviews.count) {
+        UIView *subView = self.subviews.lastObject;
+        [subView removeFromSuperview];
+    }
+}
 
 #pragma mark - Gesture with block callback | Public
 - (void)zk_setTapActionWithBlock:(void (^)(void))block {

@@ -13,8 +13,8 @@
 // Return safe object, replace `null` with `nil`
 - (id)zk_objectAtIndex:(NSUInteger)index;
 
-
-// Convert to JSON string
+#pragma mark - Convert to JSON
 - (NSString *)zk_toJSONString;
+- (NSData *)zk_toJSONData;
 
 @end
