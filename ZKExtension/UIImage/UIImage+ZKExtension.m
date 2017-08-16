@@ -25,7 +25,7 @@
 }
 
 + (UIImage *)zk_imageWithLayer:(CALayer *)layer{
-    UIGraphicsBeginImageContext(layer.frame.size);
+    UIGraphicsBeginImageContextWithOptions(layer.frame.size, NO, 0.0f);
     [layer renderInContext:UIGraphicsGetCurrentContext()];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
@@ -33,7 +33,7 @@
 }
 
 - (UIImage *)zk_resizeToSize:(CGSize)size{
-    UIGraphicsBeginImageContext(size);
+    UIGraphicsBeginImageContextWithOptions(size, NO, 0.0f);
     [self drawInRect:CGRectMake(0, 0, size.width, size.height)];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
