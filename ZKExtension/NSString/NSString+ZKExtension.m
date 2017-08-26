@@ -43,7 +43,7 @@
 
 - (BOOL)zk_isEndWithString:(NSString *)end {
     BOOL result = NO;
-    NSRange found = [self rangeOfString:end options:NSCaseInsensitiveSearch];
+    NSRange found = [self rangeOfString:end options:NSCaseInsensitiveSearch | NSBackwardsSearch];
     if (found.location + found.length == self.length) {
         result = YES;
     }
