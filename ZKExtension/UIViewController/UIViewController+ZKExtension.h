@@ -12,4 +12,7 @@
 
 - (void)zk_tapDismissKeyboard;
 
++ (UIViewController *)zk_visibleViewController;
++ (UIViewController *)zk_popToRealRootViewControllerFromViewController:(UIViewController *)viewController;
+
 @end
